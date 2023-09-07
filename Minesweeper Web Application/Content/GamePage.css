@@ -1,0 +1,12 @@
+﻿.grid {
+    margin: auto;
+    display: grid;
+    width: 480px;
+    grid-template-columns: repeat(12, 40px);
+    grid-template-rows: repeat(12, 30px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: gray;
+    text-align: center
+}
+

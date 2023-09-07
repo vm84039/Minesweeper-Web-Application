@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Check Database Connection";
+}
+
+<h2>Database Connection Status</h2>
+
+@if (ViewBag.IsDatabaseConnected)
+{
+    <p>Database is connected.</p>
+}
+else
+{
+    <p>Database is not connected.</p>
+}

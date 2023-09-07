@@ -1,0 +1,36 @@
+﻿@using Minesweeper_Web_Application.Models
+
+@model UserModel
+
+@{
+    ViewBag.Title = "Check Items";
+}
+
+<h2>Check Items</h2>
+
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Property Name</th>
+                <th>Property Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Username:</td>
+                <td>@Model.UserName</td>
+            </tr>
+            <tr>
+                <td>FirstName:</td>
+                <td>@Model.FirstName</td>
+            </tr>
+            <!-- Add more properties as needed -->
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No user found.</p>
+}
